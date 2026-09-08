@@ -1,0 +1,30 @@
+import javax.swing.*;
+
+public class DOTSANDBOX extends JFrame {
+
+    public DOTSANDBOX() {
+
+        setTitle("Dots & Boxes");
+        setSize(500, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JLabel title = new JLabel(
+                "Dots & Boxes Game",
+                SwingConstants.CENTER
+        );
+
+        title.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 24));
+
+        add(title);
+
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+
+        SwingUtilities.invokeLater(() -> {
+            new DOTSANDBOX();
+        });
+    }
+}
